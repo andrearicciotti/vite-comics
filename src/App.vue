@@ -2,12 +2,14 @@
 import HeaderApp from './components/HeaderApp.vue';
 import ContentApp from './components/ContentApp.vue';
 import ProductsApp from './components/ProductsApp.vue';
+import FooterApp from './components/FooterApp.vue';
 export default {
 
   components: {
     HeaderApp,
     ContentApp,
     ProductsApp,
+    FooterApp,
   },
 
   data() {
@@ -26,6 +28,7 @@ export default {
     <HeaderApp />
     <ContentApp />
     <ProductsApp />
+    <FooterApp />
     
   </div>
 </template>
