@@ -17,7 +17,13 @@ export default {
 </script>
 
 <template>
-  <HeaderApp />
+  <div class="container">
+
+    <HeaderApp />
+    
+  </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+@use './style/general.scss';
+</style>

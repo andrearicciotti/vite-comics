@@ -50,13 +50,13 @@ export default {
         <img src="../assets/img/dc-logo.png" alt="">
     </div>
     <div class="options">
-        <ul>
-            <li v-for="(option, index) in navOptions" key="option.option">{{ option }}</li>
+        <ul class="options-list">
+            <li class="list-item" v-for="(option, index) in navOptions" key="option.option">{{ option.option }}</li>
         </ul>
     </div>
 </div>
 </template>
 
 <style lang="scss" scoped>
-
+@use '../style/partials/headerApp';
 </style>
