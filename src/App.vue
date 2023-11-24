@@ -1,7 +1,7 @@
 <script>
 import HeaderApp from './components/HeaderApp.vue';
 import ContentApp from './components/ContentApp.vue';
-import ProductsApp from './components/LinksApp.vue';
+import ProductsApp from './components/ProductsApp.vue';
 export default {
 
   components: {

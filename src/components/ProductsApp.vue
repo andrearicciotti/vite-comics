@@ -32,10 +32,10 @@ export default {
 <template>
     <section class="products">
         <div class="flex-container">
-            <div class="product flex" v-for="product in products" key="product.imagePath">
+            <a href="" class="product flex" v-for="product in products" key="product.imagePath">
                 <img :src="product.imagePath" :alt="product.title">
                 <span>{{ product.title }}</span>
-            </div>
+            </a>
         </div>
     </section>
 </template>
@@ -54,23 +54,25 @@ export default {
         margin: 0 auto;
         @include flex(row, space-between, center);
         .product {
+            width: calc(100% / 5);
             height: 100%;
-            padding: 1rem;
-            font-size: .5rem;
+            text-decoration: none;
+            color: inherit;
+            font-size: .6rem;
             text-transform: uppercase;
-
+            gap: .4rem;
+            
+            &.flex {
+                @include flex(row, center, center);
+            }
+            
             img {
-                height: 60%;
-                margin-right: .6rem
-                
+                height: 35%;
             }
         }
     }
 }
 
-.flex {
-    @include flex(row, space-between, center);
-}
 
 
 </style>
