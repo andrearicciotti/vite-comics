@@ -8,7 +8,7 @@ export default {
                     imagePath: '../src/assets/img/buy-comics-digital-comics.png'
                 },
                 {
-                    title: 'cd merchandise',
+                    title: 'dc merchandise',
                     imagePath: '../src/assets/img/buy-comics-merchandise.png'
                 },
                 {

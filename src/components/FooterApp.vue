@@ -48,6 +48,28 @@ export default {
                         'DC Power Visa',
                     ]
                 },
+            ],
+            socials: [
+                {
+                    social: 'facebook',
+                    imagePath: '../src/assets/img/footer-facebook.png'
+                },
+                {
+                    social: 'twitter',
+                    imagePath: '../src/assets/img/footer-twitter.png'
+                },
+                {
+                    social: 'youtube',
+                    imagePath: '../src/assets/img/footer-youtube.png'
+                },
+                {
+                    social: 'pinterest',
+                    imagePath: '../src/assets/img/footer-pinterest.png'
+                },
+                {
+                    social: 'periscope',
+                    imagePath: '../src/assets/img/footer-periscope.png'
+                }
             ]
         }
     }
@@ -74,10 +96,20 @@ export default {
             </div>
 
         </section>
-    </div>
-    <section class="footer-bottom">
+        <section class="footer-bottom">
 
-    </section>
+            <div class="container-bottom">
+                <div class="cta">
+                    <a href="">Sign up now!</a>
+                </div>
+                <div class="socials">
+                    <span>follow Us</span>
+                    <a href="" v-for="(social, index) in socials" key="social.social"><img :src="social.imagePath" alt=""></a>
+                </div>
+            </div>
+    
+        </section>
+    </div>
 </footer>
 </template>
 
@@ -131,15 +163,55 @@ footer {
             }
             .logo {
                 background-image: url('../assets/img/dc-logo-bg.png');
+                background-repeat: no-repeat;
                 background-size: 100%;
                 background-position: center;
             }
         }
-    }
-    .footer-bottom {
-        width: 100%;
-        height: 80px;
-        background-color: $footer_color;
+        .footer-bottom {
+            width: 100%;
+            height: 83px;
+            background-color: $footer_color;
+
+            .container-bottom {
+                color: $white_color;
+                width: 70%;
+                height: 100%;
+                margin: 0 auto;
+                @include flex (row, space-between, center);
+
+                .cta {
+                    width: 20%;
+                    @include flex (row, start, center);
+
+                    a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: .8rem;
+                        color: inherit;
+                        padding: .7rem;
+                        border: 2px solid $primary_color;
+                    }
+                }
+
+                .socials {
+                    flex-grow: 1;
+                    @include flex (row, end, center);
+                    span {
+                        text-transform: uppercase;
+                        color: $primary_color;
+                        margin: 0 1rem;
+                    }
+                    a {
+                        padding: .5rem;
+
+                        img {
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 </style>

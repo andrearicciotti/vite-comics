@@ -29,7 +29,7 @@ export default {
     <ContentApp />
     <ProductsApp />
     <FooterApp />
-    
+
   </div>
 </template>
 
@@ -39,7 +39,9 @@ export default {
 @use './style/partials/mixins' as *;
 
 .container {
-    margin: 0 auto;
-    background-color: $white_color;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $white_color;
 }
 </style>
