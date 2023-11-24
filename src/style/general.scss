@@ -1,8 +1,4 @@
-// custom colors
-$primary_color : #0268C7;
-$secondary_color : #161616;
-$white_color : #f1f1f1;
-$footer_color : #262626;
+@use './partials/variables' as *;
 
 * {
     margin: 0;
@@ -10,7 +6,11 @@ $footer_color : #262626;
     box-sizing: border-box;
 }
 
-.container {
-    margin: 0 auto;
-    background-color: $white_color;
+img {
+    max-width: 100%
 }
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
