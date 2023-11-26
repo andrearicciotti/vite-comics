@@ -1,6 +1,7 @@
 <script>
 import HeaderApp from './components/HeaderApp.vue';
 import JumbotronApp from './components/JumbotronApp.vue';
+import SeriesApp from './components/SeriesApp.vue';
 import ProductsApp from './components/ProductsApp.vue';
 import FooterApp from './components/FooterApp.vue';
 export default {
@@ -10,6 +11,7 @@ export default {
     JumbotronApp,
     ProductsApp,
     FooterApp,
+    SeriesApp,
   },
 
   data() {
@@ -27,6 +29,7 @@ export default {
 
     <HeaderApp />
     <JumbotronApp />
+    <SeriesApp />
     <ProductsApp />
     <FooterApp />
 
