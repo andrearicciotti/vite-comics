@@ -142,7 +142,7 @@ footer {
                 padding: 1.5rem 0;
 
                 ul {
-                    margin: 1rem 0;
+                    margin: .5rem 0;
 
                     h4 {
                         margin-bottom: .5rem;
@@ -155,7 +155,7 @@ footer {
                         a {
                             text-decoration: none;
                             color: inherit;
-                            font-size: .8rem;
+                            font-size: .6rem;
                             font-weight: 300;
                         }
                     }

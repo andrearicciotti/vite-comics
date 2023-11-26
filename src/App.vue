@@ -1,13 +1,13 @@
 <script>
 import HeaderApp from './components/HeaderApp.vue';
-import ContentApp from './components/ContentApp.vue';
+import JumbotronApp from './components/JumbotronApp.vue';
 import ProductsApp from './components/ProductsApp.vue';
 import FooterApp from './components/FooterApp.vue';
 export default {
 
   components: {
     HeaderApp,
-    ContentApp,
+    JumbotronApp,
     ProductsApp,
     FooterApp,
   },
@@ -26,7 +26,7 @@ export default {
   <div class="container">
 
     <HeaderApp />
-    <ContentApp />
+    <JumbotronApp />
     <ProductsApp />
     <FooterApp />
 
