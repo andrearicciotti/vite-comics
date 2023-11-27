@@ -98,7 +98,7 @@ export default {
             border-bottom: 1px solid lightskyblue;
             color: $primary_color;
             animation-name: border;
-            animation-duration: 1.3s;
+            animation-duration: 1.2s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
@@ -107,15 +107,15 @@ export default {
 
 @keyframes border {
     25% {
-        border-bottom: 2px solid lightskyblue;
+        border-bottom: 3px solid lightskyblue;
     }
 
     50% {
-        border-bottom: 4px solid $primary_color;
+        border-bottom: 5px solid $primary_color;
     }
 
     75% {
-        border-bottom: 2px solid lightskyblue;
+        border-bottom: 3px solid lightskyblue;
     }
 }
 
